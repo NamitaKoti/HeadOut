@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-family: sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background:url(./peach.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}    
+.box{
+    width: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+}
+.box form .input_box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.box form .input_box input{
+    width: 100%;
+    font-size: 25px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+}
+.box form .selection{
+    background-color: #ebacac;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.box form .selection p{
+    font-size: 22px;
+    color: #fff;
+}
+.box form .selection span{
+    border-right: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    border-left: 5px solid #ebacac;
+    border-top: 5px solid #ebacac;
+    display: inline-block;
+    rotate: 45deg;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.box form .categories{
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    background-color: #ebacac;
+    color: #000;
+    padding: 10px;
+    font-size: 0px;
+    opacity: 0;
+    pointer-events: none;
+    margin-top: 1px;
+    border-radius: 10px;
+
+}
+.box form .active{
+    font-size: 17px;
+    opacity: 1;
+    pointer-events: fill;
+}
+.box form .categories p{
+    margin: 5px 0px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.box form .categories p:hover{
+    background-color: #efc5c5;
+}

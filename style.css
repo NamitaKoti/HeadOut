@@ -1,0 +1,286 @@
+:root{
+    --pink:#e84393;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top:6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding: 2rem 9%;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--pink);
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span{
+    color:var(--pink);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color:var(--pink);
+}
+header .icons a{
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1rem;
+    padding-left: 5px;
+    padding-right: 7px;
+}
+header .icons a:hover{
+    color:var(--pink);
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(./hanger.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.home .content{
+    max-width: 60rem;
+}
+.home .content h3{
+    font-size: 7rem;
+    color: #333;
+}
+.home .content span{
+    font-size: 3rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 2rem;
+    color:#757171;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+@media (max-width:991px){
+
+    html{
+        font-size:55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0,100% 100% , 0% 100%);
+    }
+
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .home .content h3{
+        font-size: 5rem;
+    }
+
+    .home .content span{
+        font-size: 2.5rem;
+    }
+} 
+
+@media (max-width:450px){
+
+    html{
+        font-size:50%;
+    }
+    header{
+        padding: 2rem;
+    }
+}
+
+/* toggle switch button */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color:#e84393;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #e84393;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  /* climate title */
+  .climate-mode-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Adjust the margin to separate Climate Mode from the header content */
+}
+ header h3{
+   font-size: 2rem;
+    padding: 0 1rem;
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+}
+header .switch {
+   margin-left: 10px; /* Adjusted the margin */
+}

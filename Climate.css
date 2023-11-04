@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(./cup.jpeg); 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    background: url(./cup.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 60%; /* Adjusted width */
+    max-width: 400px; /* Adjusted max-width */
+    background: #fff;
+    border-radius: 20px; /* Adjusted border-radius */
+    padding: 5px; /* Adjusted padding */
+    margin-top: 20px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 5px; /* Adjusted padding */
+    font-size: 20px;
+    color: #ebacac;
+}
+
+::placeholder {
+    color: #ebacac;
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 30px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    background-color: #ebacac;
+    cursor: pointer;
+    margin-left: 5px; /* Adjusted margin */
+}
+
+.search-bar button img {
+    width: 20px; /* Adjusted width */
+}

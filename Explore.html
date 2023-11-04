@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Explore.css">
+</head>
+
+<body>
+
+    <div class="box">
+        <form action="#">
+            <div class="input_box">
+                <input type="text" placeholder="Search..." required>
+                <div class="selection">
+                    <p>Filters</p><span></span>
+                </div>
+
+                <div class="categories">
+                <p class="options">Traditional</p>
+                <p class="options">Partywear</p>
+                <p class="options">Casual</p>
+                <p class="options">Formal</p>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<script>
+
+    let selection = document.querySelector(".selection");
+    let selected_text = document.querySelector(".selection p");
+    let categories = document.querySelector(".categories");
+    let options = document.querySelectorAll(".categories p");
+
+
+    selection.onclick = function(){
+        categories.classList.toggle("active");
+    }
+
+    options.forEach(option => {
+        option.onclick = function(){
+            selected_text.innerHTML = option.innerHTML;
+        categories.classList.toggle("active");
+
+        }
+    });
+
+</script>
+
+</html>

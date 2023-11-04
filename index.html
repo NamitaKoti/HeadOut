@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="https://cdnjs.coloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-----  header section starts -->
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="#" class="logo">StyleOn<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#review">Review</a>
+            <a href="#aboutus">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="climate-mode-container">
+            <h3 class="Climate">Climate Mode </h3>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <script>
+            const switchInput = document.querySelector('.switch input');
+    
+            switchInput.addEventListener('change', function () {
+                if (this.checked) {
+                    window.location.href = "./Climate.html";
+                }
+            });
+        </script>
+        
+    </div>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-user"></a>
+        </div>
+    </header>
+    <!-----  header section end -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Style Sizzle</h3>
+            <span>Express yourself through fashion.</span>
+            <p>"Boost your confidence with great style and grooming, leaving a memorable impression everywhere you go.
+                Explore how taking care of yourself can make you feel more self-assured and stylish."</p>
+            <!-- <a href="#" class="btn">Explore Now</a>     -->
+            <a href="./Explore.html" class="btn">Explore Now</a>       
+    </section>
+    
+
+    <!-- home section ends -->
+   
+
+</body>
+
+</html>
